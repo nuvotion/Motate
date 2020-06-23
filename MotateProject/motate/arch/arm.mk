@@ -69,4 +69,4 @@ DEVICE_ASFLAGS  := -mcpu=$(CPU_DEV) -mthumb $(FLOAT_OPTIONS)
 # ---------------------------------------------------------------------------------------
 # Linker Flags
 
-DEVICE_LDFLAGS :=  -Wl,--entry=Reset_Handler -nostartfiles -mcpu=$(CPU_DEV) --specs=nano.specs ${PRINTF_FLOAT_FLAGS} -mthumb -L$(DEVICE_LINKER_SCRIPT_PATH) $(FLOAT_OPTIONS)
+DEVICE_LDFLAGS :=  -nostartfiles -mcpu=$(CPU_DEV) --specs=nano.specs ${PRINTF_FLOAT_FLAGS} -mthumb -L$(DEVICE_LINKER_SCRIPT_PATH) $(FLOAT_OPTIONS)

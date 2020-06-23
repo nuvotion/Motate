@@ -62,4 +62,8 @@ namespace Motate {
 #include <Freescale_klxx/KL05ZServiceCall.h>
 #endif
 
+#if defined(__PSOC5LP__)
+#include <PsocServiceCall.h>
+#endif
+
 #endif /* end of include guard: MOTATESERVICECALL_H_ONCE */

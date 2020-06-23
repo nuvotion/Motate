@@ -90,4 +90,8 @@ namespace Motate {
 #include <Freescale_klxx/KL05ZTimers.h>
 #endif
 
+#if defined(__PSOC5LP__)
+#include <PsocTimers.h>
+#endif
+
 #endif /* end of include guard: MOTATETIMERS_H_ONCE */

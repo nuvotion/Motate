@@ -174,6 +174,9 @@ namespace Motate {
 #include <Freescale_klxx/KL05ZPins.h>
 #endif
 
+#if defined(__PSOC5LP__)
+#include <PsocPins.h>
+#endif
 
 namespace Motate {
 

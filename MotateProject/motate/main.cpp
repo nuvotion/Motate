@@ -61,13 +61,13 @@ extern "C"{
     // These routines are defined with C linkage:
 
     void _init() {
-        SystemInit();
+        //SystemInit();
     }
 
     void __libc_init_array(void);
 
     void _start() {
-        SystemInit();
+        //SystemInit();
         __libc_init_array();
         main();
     }
@@ -88,7 +88,7 @@ void _system_init(void)
     SystemInit();
 #endif // __AVR__
 
-    Motate::WatchDogTimer.disable();
+    //Motate::WatchDogTimer.disable();
 }
 
 
