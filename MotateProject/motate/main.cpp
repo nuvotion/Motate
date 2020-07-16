@@ -84,9 +84,9 @@ extern "C"{
 
 void _system_init(void)
 {
-#ifdef __AVR__
+//#ifdef __AVR__
     SystemInit();
-#endif // __AVR__
+//#endif // __AVR__
 
     //Motate::WatchDogTimer.disable();
 }
